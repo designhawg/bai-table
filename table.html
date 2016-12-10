@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>One Column No Photo Template</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"></link>
+<style type="text/css">
+		body {
+			background-color: green;
+		}
+		table {
+			background-color: white;
+		}
+
+		/* Based on The MailChimp Reset INLINE: Yes. */
+		/* Client-specific Styles */
+		#outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+		body {width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;font-family: 'Open Sans', Calibri, Verdana, Geneva, sans-serif;}
+		/* Prevent Webkit and Windows Mobile platforms from changing default font sizes.*/
+		.ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+		/* Forces Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+		#backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+		/* End reset */
+
+		/* Some sensible defaults for images
+		Bring inline: Yes. */
+		img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;}
+		a img {border:none;}
+		.image_fix {display:block;}
+
+		/* Yahoo paragraph fix
+		Bring inline: Yes. */
+		p {
+			font-size: 12px;
+			margin-bottom:1em;}
+
+		/* Outlook 07, 10 Padding issue fix
+		Bring inline: No.*/
+		table td {border-collapse: collapse;}
+
+		/* Remove spacing around Outlook 07, 10 tables
+		Bring inline: Yes */
+		table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+
+		/* Styling your links has become much simpler with the new Yahoo.  In fact, it falls in line with the main credo of styling in email and make sure to bring your styles inline.  Your link colors will be uniform across clients when brought inline.
+		Bring inline: Yes. */
+		li {text-align:left;margin-bottom:1em;}
+
+		/***************************************************
+		****************************************************
+		MOBILE TARGETING
+		****************************************************
+		***************************************************/
+		@media only screen and (max-device-width: 480px) {
+			/* Part one of controlling phone number linking for mobile. */
+			a[href^="tel"], a[href^="sms"] {
+						text-decoration: none;
+						pointer-events: none;
+						cursor: default;
+					}
+
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+						text-decoration: default;
+						pointer-events: auto;
+						cursor: default;
+					}
+
+		}
+
+		/* More Specific Targeting */
+
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		/* You guessed it, ipad (tablets, smaller screens, etc) */
+			/* repeating for the ipad */
+			a[href^="tel"], a[href^="sms"] {
+						text-decoration: none;
+						pointer-events: none;
+						cursor: default;
+					}
+
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+						text-decoration: default;
+						pointer-events: auto;
+						cursor: default;
+					}
+		}
+
+		@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+		/* Put your iPhone 4g styles in here */
+			p {
+				font-size: 1em;
+			}
+		}
+
+		@media only screen and (max-width: 500px) {
+		/* Put your iPhone 4g styles in here */
+			p {
+				font-size: 2em;
+			}
+		}
+
+		/* Android targeting */
+		@media only screen and (-webkit-device-pixel-ratio:.75){
+		/* Put CSS for low density (ldpi) Android layouts in here */
+		}
+		@media only screen and (-webkit-device-pixel-ratio:1){
+		/* Put CSS for medium density (mdpi) Android layouts in here */
+		}
+		@media only screen and (-webkit-device-pixel-ratio:1.5){
+		/* Put CSS for high density (hdpi) Android layouts in here */
+		}
+		/* end Android targeting */
+
+body {color:#231f20;font-family: 'Open Sans', Calibri, Verdana, Geneva, sans-serif;font-size:14px;}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Museo Slab', TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+  color:#00a1de;
+  font-weight:normal;
+}
+h1 {font-size:1.5em;}
+h2 {font-size:1.3em;}
+h3 {font-size:1.2em;}
+
+.top-left, .top-right {
+  text-align: right;
+  float: left;
+  width: 50%;
+}
+
+.top-right h2, .top-right h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.top-right h2 {
+  margin-top: 55px;
+}
+
+.top-right h4 {
+  font-family: 'Open Sans', Calibri, Verdana, Geneva, sans-serif;
+  color: #000;
+  font-size: .9em;
+}
+
+.top-left {
+  text-align: left;
+}
+
+.dark {
+  color: #000;
+}
+
+.hero {
+	margin-top: -40px;
+}
+
+a, .hero a, .secondary h3 a, .events h3 a {
+  text-decoration: none;
+}
+
+a:visited, .hero a:visited, .secondary h3 a:visited, .events h3 a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero h1 {
+  font-size: 3em;
+  line-height: 1.1em;
+	font-family: 'Museo Slab', TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+
+}
+
+.hero h2 {
+  border-bottom: 5px solid #00AAE7;
+  color: #000;
+  font-size: 2em;
+  margin-bottom: 0em;
+  margin-top: .7em;
+  padding-bottom: .3em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+
+.label, .secondary h3, .events h3 {
+  color: #000;
+  font-family: 'Open Sans', Calibri, Verdana, Geneva, sans-serif;
+  font-weight: 700;
+  font-size: 1.1em;
+  margin-bottom: .5em;
+}
+
+.label {
+  text-transform: uppercase;
+}
+
+.imgpop {
+  margin: 3em 0;
+}
+
+.secondary, .events {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 2em 0;
+}
+
+.events {
+  border-bottom: none;
+}
+
+.secondary p {
+  font-size: 1.1em;
+  line-height: 1.4em;
+  margin: 0 0 1.5em 0;
+}
+
+.byline, .lead {
+  font-weight: 700;
+}
+
+.byline {
+  font-size: .9em;
+}
+
+.intro {
+  margin-bottom: 3em;
+}
+
+.footer {
+  border-top: 5px solid #00AAE7;
+  border-bottom: 1px solid #000;
+  margin-bottom: 1em;
+  padding: 2em 0;
+}
+
+ul {
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+}
+
+.subfooter {
+  padding-bottom: 4em;
+}
+
+.banner {
+  background-color: #00AAE7;
+  display: block;
+  float: left;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.banner ul {
+  padding: 20px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  display: block;
+}
+
+.subfooter li, .banner li {
+  float: left;
+  font-size: .9em;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.banner li {
+  font-weight: 700;
+  margin-top: -8px;
+}
+
+.banner li a {
+  color: #fff;
+}
+
+.subfooter li a {
+  color: #000;
+}
+
+.noTop {
+	margin-top: -100px;
+}
+
+b, strong {color:#00a0de;}
+/*ul {
+	list-style-type:disc;
+    list-style-image: url('https://info.bai.org/rs/415-RKB-576/images/bullet.png');
+	margin-left: 1.5em;
+	padding-left:0;
+}*/
+
+
+.cta-area {height:22px;}
+.cta-area a {display:block;color:#ffffff;text-decoration:none;font-family: 'Museo Slab', TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;height:auto;}
+hr {height:1px;background-color:#004065;border:none;margin:50px 0 30px 0;display:block;}
+.white-text {color:#ffffff;}
+.white-text a {color:#ffffff;text-decoration:underline;}
+.tiny {font-size:10px;}
+.im {color:#000000;}
+.ii a[href] {color: #ffffff !important;text-decoration: none !important;}
+.ii .footer-table a[href] {color: #ffffff !important;text-decoration: underline !important;}
+
+#main-headline p, #secondary-headline p, #third-headline p {margin-bottom:0px;}
+</style>
+</head>
+
+<body class="noTop">
+<table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top">
+      <!-- <div class="top-left"> -->
+        <img src="https://info.bai.org/rs/415-RKB-576/images/BAI_logo_email.png" alt="BAI">
+		</td>
+			<!-- <div class="top-right"> -->
+		<td align="left" valign="top">
+        <h2 style="font-family: 'Museo Slab', Arial, sans-serif;">Banking Strategies <span class="dark">Daily</span></h2>
+        <h4 class="date mktEditable">day, month XX, 20XX</h4>
+		</td>
+	</tr>
+	test
+
+
+
+
+      <div class="banner">
+        <ul>
+          <li><a href="#1">Subscribe</a></li>
+          <li><a href="#1">My account</a></li>
+        </ul>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <table width="600" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="left" valign="top">
+  		        <div class="mktEditable hero" id="main-content">
+                <h1 style="margin-bottom:.5em"><a href=
+                "http://click.bai.org/a0100Q0FUR0t00OB5K6ImKK"
+                target="_blank">xx Top story headline here, maximum of 3 lines</a></h1>
+                <p style="margin-bottom:1em">xx Key quote or summary to drive readers to click. No more than three lines please.</p>
+                <h4 class="label">More from BAI</h4>
+                <h2><a href=
+                "http://click.bai.org/a0100Q0FUR0t00OB5K6ImKK"
+                target="_blank">xx Second most important headline of day</a></h2>
+                <h2><a href=
+                "http://click.bai.org/a0100Q0FUR0t00OB5K6ImKK"
+                target="_blank">xx Third most important headline of day</a></h2>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- first ad position -->
+    <tr>
+      <!-- start of ad -->
+      <td align="center">
+        <div class="imgpop">
+          <a href="https://www.bai.org/baibeacon" target="_blank">
+            <img class="center" src="https://www.bai.org/docs/default-source/libraries/advertisements/ad-1.jpg" border="0" alt="BAI Beacon - Early Bird Offer" hspace="0" vspace="0" /></a>
+        </div>
+      </td>
+      <!-- end of image -->
+    </tr>
+
+    <tr>
+      <td>
+        <table width="600" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left" valign="top">
+    		        <div class="mktEditable secondary" id="editor-picks">
+                  <h4 class="label">Editor's picks</h4>
+
+                  <h3><a href=
+                  "http://click.bai.org/a0100Q0FUR0t00OB5K6ImKK"
+                  target="_blank">xx Editor pick headline 1</a></h3>
+                  <p>xx Summary here should not be longer than two lines of text if possible. <span class="byline">[ source of story ]</span></p>
+
+                  <h3><a href=
+                  "http://click.bai.org/a0100Q0FUR0t00OB5K6ImKK"
+                  target="_blank">xx Editor pick headline 2</a></h3>
+                  <p>xx Summary here should not be longer than two lines of text if possible. <span class="byline">[ source of story ]</span></p>
+
+                  <h3><a href=
+                  "http://click.bai.org/a0100Q0FUR0t00OB5K6ImKK"
+                  target="_blank">xx Editor pick headline 3</a></h3>
+                  <p>xx Summary here should not be longer than two lines of text if possible. <span class="byline">[ source of story ]</span></p>
+
+                  <h3><a href=
+                  "http://click.bai.org/a0100Q0FUR0t00OB5K6ImKK"
+                  target="_blank">xx Editor pick headline 4</a></h3>
+                  <p>xx Summary here should not be longer than two lines of text if possible. <span class="byline">[ source of story ]</span></p>
+
+                  <h3><a href=
+                  "http://click.bai.org/a0100Q0FUR0t00OB5K6ImKK"
+                  target="_blank">xx Editor pick headline 5</a></h3>
+                  <p>xx Summary here should not be longer than two lines of text if possible. <span class="byline">[ source of story ]</span></p>
+
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- second ad position -->
+      <tr>
+        <!-- start of ad -->
+        <td align="center">
+          <div class="imgpop">
+            <a href="https://www.bai.org/baibeacon" target="_blank">
+              <img src="https://www.bai.org/docs/default-source/libraries/advertisements/ad-1.jpg" border="0" alt="BAI Beacon - Early Bird Offer" hspace="0" vspace="0" /></a>
+          </div>
+        </td>
+        <!-- end of image -->
+      </tr>
+
+      <!-- events segment -->
+      <tr>
+        <td>
+          <table width="600" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="left" valign="top">
+      		        <div class="mktEditable events" id="upcoming">
+                    <h4 class="label">Upcoming BAI events</h4>
+
+                    <p><a href=
+                    "http://click.bai.org/a0100Q0FUR0t00OB5K6ImKK"
+                    target="_blank">X/XX/XX - X/XX/XX — Event name</a></p>
+
+                    <h4 class="label">Complimentary BAI webinars - on demand</h4>
+
+                    <h3><a href=
+                    "http://click.bai.org/a0100Q0FUR0t00OB5K6ImKK"
+                    target="_blank">xx Webinar name here</a></h3>
+
+                    <h3><a href=
+                    "http://click.bai.org/a0100Q0FUR0t00OB5K6ImKK"
+                    target="_blank">xx Webinar name here</a></h3>
+
+                    <h3><a href=
+                    "http://click.bai.org/a0100Q0FUR0t00OB5K6ImKK"
+                    target="_blank">xx Webinar name here</a></h3>
+
+                    <h3><a href=
+                    "http://click.bai.org/a0100Q0FUR0t00OB5K6ImKK"
+                    target="_blank">xx Webinar name here</a></h3>
+
+                    <h3><a href=
+                    "http://click.bai.org/a0100Q0FUR0t00OB5K6ImKK"
+                    target="_blank">xx Webinar name here</a></h3>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- footer -->
+        <tr>
+          <!-- start of ad -->
+          <td>
+            <div class="footer">
+              <p class="intro">BAI Banking Strategies Daily is published by the BAI Center and subject to copyright. All rights reserved. Click here for copyright information and terms of use.</p>
+              <p><span class="lead">For Editorial Questions:</span> Lou Carlozo, 312-683-2329, lcarlozo@bai.org</p>
+              <p><span class="lead">Submit an Article for BAI Banking Strategies:</span> View submission guidelines</p>
+            </div>
+            <div class="subfooter">
+              <ul>
+                <li><a href="#1">Subscribe</a></li>
+                <li><a href="#1">Change email</a></li>
+                <li><a href="#1">Advertising Opportunities</a></li>
+                <li><a href="#1">Unsubscribe</a></li>
+              </ul>
+            </div>
+          </td>
+          <!-- end of image -->
+        </tr>
+
+  <div style="line-height:100px">&nbsp;;</div>
+</body>
+</html>
